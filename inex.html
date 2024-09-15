@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro</title>
+  </head>
+  <body>
+    <div id="timer-message">Please select a timer before starting.</div>
+
+    <!-- heading title -->
+    <div class="container">
+      <div class="timer">
+        <h1>⏰ Pomodoro Timer</h1>
+
+        <!-- buttons -->
+        <div class="button-container">
+          <button class="btn" id="Pomodoro-session">Pomodoro</button>
+          <button class="btn" id="short-break">Short Break</button>
+          <button class="btn" id="long-break">Long Break</button>
+        </div>
+
+        <!-- Timer -->
+        <main>
+          <div class="pomodoro">
+            <div
+              id="pomodoro-timer"
+              class="timer-display"
+              data-duration="25.00"
+            >
+              <h1 class="time">25:00</h1>
+            </div>
+
+            <div id="short-timer" class="timer-display" data-duration="5.00">
+              <h1 class="time">5:00</h1>
+            </div>
+
+            <div id="long-timer" class="timer-display" data-duration="10.00">
+              <h1 class="time">10:00</h1>
+            </div>
+          </div>
+        </main>
+
+        <!-- buttons -->
+        <div class="btns">
+          <button class="btn" id="start">START</button>
+          <button class="btn" id="stop">STOP</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
